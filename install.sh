@@ -15,12 +15,15 @@ sudo apt-get install papirus-icon-theme
 # Install Numix (theme)
 sudo apt install numix-gtk-theme
 
+# Install lightdm settings manager
+sudo apt-get install lightdm-webkit-greeter
+
 # Install shell
 # Install zsh
 sudo apt-get install zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 # Change theme to agnoster
-sed -n -i.bak 's/robbyrussell/agnoster/g' ~/.zshrc
+sed -i.bak s/robbyrussell/agnoster/g ~/.zshrc
 echo "DEFAULT_USER=\`whoami\`" >> ~/.zshrc
 
 # Manual Steps
