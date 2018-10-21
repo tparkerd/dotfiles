@@ -15,8 +15,8 @@ sudo apt-get install papirus-icon-theme
 # Install Numix (theme)
 sudo apt install numix-gtk-theme
 
-# Install lightdm settings manager
-sudo apt-get install lightdm-webkit-greeter
+# Install lightdm slick greeter & settings editor
+# sudo apt-get install lightdm-webkit-greeter
 
 # Install shell
 # Install zsh
