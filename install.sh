@@ -8,13 +8,11 @@ chsh -s $(which zsh)
 # Change theme to agnoster
 sed -n -i 's/ZSH_THEME\=.*"/ZSH_THEME\="agnoster"/' ~/.zshrc
 # Install Powerline Fonts
-(
-	git clone https://github.com/powerline/fonts.git --depth=1
-	cd fonts
-	./install.sh
-	cd ..
-	rm -rf fonts
-)
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 
 # Install Papirus  (Icons)
 sudo add-apt-repository ppa:papirus/papirus
