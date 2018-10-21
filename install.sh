@@ -6,7 +6,7 @@ sudo apt-get install zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 chsh -s $(which zsh)
 # Change theme to agnoster
-sed -n -i 's/ZSH_THEME\=.*"/ZSH_THEME\="agnoster"/' ~/.zshrc
+sed -n -i 's/robbyrussell/agnoster/g' ~/.zshrc
 # Install Powerline Fonts
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
