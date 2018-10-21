@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# Install shell
-# Install zsh & oh-my-zsh
-sudo apt-get install zsh
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-chsh -s $(which zsh)
-# Change theme to agnoster
-sed -n -i 's/robbyrussell/agnoster/g' ~/.zshrc
 # Install Powerline Fonts
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
@@ -18,6 +11,14 @@ rm -rf fonts
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
 sudo apt-get install papirus-icon-theme
+
+# Install shell
+# Install zsh
+sudo apt-get install zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# Change theme to agnoster
+# sed -n -i 's/robbyrussell/agnoster/g' ~/.zshrc
+
 
 # Install Numix (theme)
 sudo apt install numix-gtk-theme
