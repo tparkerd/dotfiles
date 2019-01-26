@@ -8,9 +8,13 @@ cd ..
 rm -rf fonts
 
 # Install Papirus  (Icons)
+# Debian
 sudo add-apt-repository ppa:papirus/papirus
 sudo apt-get update
 sudo apt-get install papirus-icon-theme
+
+# Arch
+# aurman -S papirus-icon-theme
 
 # Install Numix (theme)
 sudo apt install numix-gtk-theme
@@ -25,6 +29,11 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 # Change theme to agnoster
 sed -i.bak s/robbyrussell/agnoster/g ~/.zshrc
 echo "DEFAULT_USER=\`whoami\`" >> ~/.zshrc
+
+# Install albert (fuzzy search / Mac's Spotlight)
+# Debian install
+curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
+
 
 # Manual Steps
 # Update appearance (style & icons)
