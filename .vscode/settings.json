@@ -1,0 +1,129 @@
+{
+    // "[python]": {
+    //   "editor.defaultFormatter": "ms-python.black-formatter"
+    // },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    // "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "supermaven.enable": {
+        "*": false
+    },
+    "jupyter.askForKernelRestart": false,
+    "isort.args": [
+        "--force-single-line-imports",
+    ],
+    "todo-tree.general.tagGroups": {},
+    "todo-tree.tree.autoRefresh": true,
+    "todo-tree.highlights.customHighlight": {
+        "WARN": {
+            "foreground": "#fff",
+            "background": "#ff3f3f",
+            "iconColour": "#ff3f3f",
+            "icon": "alert",
+            "type": "text"
+        },
+        "TODO": {
+            // "foreground": "#000",
+            // "background": "#65e442",
+            // "iconColour": "#65e442",
+            "icon": "check",
+            "type": "text"
+        },
+        "FIXME": {
+            "foreground": "#000",
+            "background": "#ff3f3f",
+            "iconColour": "#ff3f3f",
+            "icon": "bug"
+        },
+        "REVIEW": {
+            "foreground": "#d4e0e2",
+            "background": "#4f9fd7",
+            "iconColour": "#66bfff",
+            "icon": "eye"
+        },
+        "HACK": {
+            "foreground": "#000",
+            "background": "#FFA500",
+            "iconColour": "#FFA500",
+            "icon": "alert"
+        },
+        "REF": {
+            "foreground": "#000",
+            "background": "#cecece",
+            "iconColour": "#cecece",
+            "icon": "link",
+            "type": "tag"
+        }
+    },
+    "todo-tree.highlights.defaultHighlight": {
+        "type": "tag-and-subTag"
+    },
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "REVIEW",
+        "HACK",
+        "REF",
+        "WARN"
+    ],
+    "todo-tree.general.statusBar": "current file",
+    "todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
+    "todo-tree.tree.labelFormat": "${tag} ${subTag} ${after}",
+    "todo-tree.filtering.ignoreGitSubmodules": true,
+    "todo-tree.tree.showCountsInTree": true,
+    "notebook.lineNumbers": "on",
+    "cSpell.userWords": [
+        "bitdepth",
+        "bname",
+        "dataframe",
+        "dryrun",
+        "dtype",
+        "ENOENT",
+        "fpath",
+        "genfromtxt",
+        "grayscale",
+        "GWAS",
+        "imread",
+        "inplace",
+        "Meshlab",
+        "mesocosm",
+        "metatype",
+        "Miniconda",
+        "nsipro",
+        "pformat",
+        "pgwasdbi",
+        "pmmapi",
+        "pyspark",
+        "rawtools",
+        "Topp",
+        "topplab",
+        "tparker",
+        "tqdm",
+        "voxel",
+        "voxels"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-user": {
+            "name": "custom-dictionary-user",
+            "path": "~/.cspell/custom-dictionary-user.txt",
+            "addWords": true,
+            "scope": "user"
+        }
+    },
+    "dataWrangler.experiments.copilot.enabled": false,
+    "dataWrangler.panels.displayOnTabFocus": false,
+    "notebook.output.textLineLimit": 40,
+    "editor.formatOnSave": true,
+    "explorer.excludeGitIgnore": true,
+    "chat.commandCenter.enabled": false,
+}

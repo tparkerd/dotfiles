@@ -1,3 +1,3 @@
-# XFCE4 Configutation
+# Dotfiles & Configuration
 
-Setup guide and scripts for installing a new Xubuntu instance
+This repo is a reference for configuring a new Linux or MacOS system.
