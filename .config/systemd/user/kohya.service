@@ -1,0 +1,30 @@
+[Unit]
+Description=Kohya GUI (ss_kohya)
+After=network.target
+
+[Service]
+Type=simple
+
+# IMPORTANT: set this to the directory where gui.sh lives
+WorkingDirectory=/home/tparker/Projects/third-party/kohya_ss
+
+ExecStart=/usr/bin/bash gui.sh --listen 0.0.0.0 --server_port 7861
+
+# Graceful shutdown
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Restart behavior
+Restart=on-failure
+RestartSec=5
+
+# Environment hardening (safe defaults)
+Environment=PYTHONUNBUFFERED=1
+Environment=GRADIO_ANALYTICS_ENABLED=False
+
+# Log handling
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
